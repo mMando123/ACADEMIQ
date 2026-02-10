@@ -141,6 +141,9 @@ CSRF_TRUSTED_ORIGINS = [
     'http://192.168.100.5:8000',
 ]
 
+if os.environ.get('DJANGO_CSRF_TRUSTED_ORIGINS'):
+    CSRF_TRUSTED_ORIGINS.extend(os.environ.get('DJANGO_CSRF_TRUSTED_ORIGINS').split(','))
+
 # Session settings
 SESSION_COOKIE_AGE = 3600
 SESSION_SAVE_EVERY_REQUEST = True

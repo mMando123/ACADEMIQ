@@ -1,36 +1,27 @@
 
 """
 Django settings for academiq project.
-Production-ready configuration for PythonAnywhere deployment.
-Fully bilingual: English (EN) & Arabic (AR) with RTL support.
 """
 
 import os
 from pathlib import Path
-from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get(
-    'DJANGO_SECRET_KEY',
-    'django-insecure-dev-only-change-this-in-production-abc123xyz789!'
-)
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-academiq-default-dev-key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', 'True') == 'True'
 
-# Correctly handle ALLOWED_HOSTS for PythonAnywhere
-# It checks if we are on PythonAnywhere (via hostname env var or manually set)
+# ALLOWED_HOSTS configuration
 env_hosts = os.environ.get('DJANGO_ALLOWED_HOSTS')
 if env_hosts:
     ALLOWED_HOSTS = env_hosts.split(',')
 else:
-    # Fallback to local development hosts + specific PA host just in case
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.100.5', '.pythonanywhere.com']
+    ALLOWED_HOSTS = ['academiq.pythonanywhere.com', 'localhost', '127.0.0.1']
 
-# Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -68,6 +59,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.i18n',
+                # 'core.context_processors.language_context', # Only enable if this file exists
             ],
             'libraries': {
                 'i18n_extras': 'core.templatetags.i18n_extras',
@@ -79,7 +71,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'academiq.wsgi.application'
 
 # Database
-# Use SQLite for simplicity on PythonAnywhere (default config)
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -97,7 +88,12 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 LANGUAGE_CODE = 'en'
+TIME_ZONE = 'UTC'
+USE_I18N = True
+USE_L10N = True
+USE_TZ = True
 
+from django.utils.translation import gettext_lazy as _
 LANGUAGES = [
     ('en', _('English')),
     ('ar', _('Arabic')),
@@ -106,11 +102,6 @@ LANGUAGES = [
 LOCALE_PATHS = [
     BASE_DIR / 'locale',
 ]
-
-TIME_ZONE = 'UTC'
-USE_I18N = True
-USE_L10N = True
-USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
@@ -128,10 +119,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Email Configuration
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL', 'noreply@academiq.com')
-
-# Admin email for notifications
-ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL', 'admin@academiq.com')
+DEFAULT_FROM_EMAIL = 'noreply@academiq.com'
 
 # Security Settings
 SECURE_BROWSER_XSS_FILTER = True
@@ -143,29 +131,19 @@ SESSION_COOKIE_HTTPONLY = True
 CSRF_COOKIE_HTTPONLY = False
 CSRF_USE_SESSIONS = True  
 
-# Base CSRF trusted origins for development
+# Base CSRF trusted origins
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost',
     'http://127.0.0.1',
-    'http://localhost:8000',
-    'http://127.0.0.1:8000',
-    'http://192.168.100.5',
-    'http://192.168.100.5:8000',
+    'https://academiq.pythonanywhere.com',
 ]
 
-# Dynamically add PythonAnywhere host to CSRF origins
 if os.environ.get('DJANGO_CSRF_TRUSTED_ORIGINS'):
     CSRF_TRUSTED_ORIGINS.extend(os.environ.get('DJANGO_CSRF_TRUSTED_ORIGINS').split(','))
-# Fallback: allows any subdomain on pythonanywhere if strictly needed (use with caution)
-# Better to set specific domain in env var.
 
 # Session settings
 SESSION_COOKIE_AGE = 3600
 SESSION_SAVE_EVERY_REQUEST = True
-
-# File upload limits (10 MB max)
-DATA_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024
-FILE_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024
 
 # Message tags
 from django.contrib.messages import constants as messages

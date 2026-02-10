@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+{% load static %}
+{% load i18n %}
+{% load i18n_extras %}
+{% get_current_language as LANGUAGE_CODE %}
+{% trans "Home" as nav_home %}
+{% trans "About Us" as nav_about %}
+{% trans "Our Services" as nav_services %}
+{% trans "Contact" as nav_contact %}
+{% trans "Get Started" as nav_get_started %}
+<html lang="{{ LANGUAGE_CODE }}" dir="{% if LANGUAGE_CODE == 'ar' %}rtl{% else %}ltr{% endif %}" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% trans "ACADEMIQ - Premium Academic Solutions" %}{% endblock %}</title>
+    <meta name="description" content="{% block description %}{% trans " Professional academic services for university students, researchers, and postgraduate scholars." %}{% endblock %}">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc',
+                            400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1',
+                            800: '#075985', 900: '#0c4a6e',
+                        },
+                        secondary: {
+                            50: '#f8fafc', 100: '#f1f5f9', 200: '#e2e8f0', 300: '#cbd5e1',
+                            400: '#94a3b8', 500: '#64748b', 600: '#475569', 700: '#334155',
+                            800: '#1e293b', 900: '#0f172a', 950: '#020617',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'Tajawal', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body
+    class="font-sans text-secondary-900 dark:text-gray-100 bg-white dark:bg-secondary-900 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 dark:bg-secondary-900/80 backdrop-blur-lg border-b border-secondary-200 dark:border-secondary-800 transition-all duration-300"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="{% url 'home' %}" class="flex-shrink-0 flex items-center">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-primary-500 to-indigo-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg mr-3 rtl:mr-0 rtl:ml-3">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <span
+                        class="font-extrabold text-2xl tracking-tight text-secondary-900 dark:text-white">ACADEMIQ</span>
+                </a>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
+                    <a href="{% url 'home' %}"
+                        class="text-secondary-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors">{% trans "Home" %}</a>
+                    <a href="{% url 'about' %}"
+                        class="text-secondary-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors">{% trans "About Us" %}</a>
+                    <a href="{% url 'services' %}"
+                        class="text-secondary-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors">{% trans "Our Services" %}</a>
+                    <a href="{% url 'contact' %}"
+                        class="text-secondary-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors">{% trans "Contact Us" %}</a>
+                </div>
+                <!-- Right Actions -->
+                <div class="hidden md:flex items-center space-x-4 rtl:space-x-reverse">
+                    <!-- Language Switcher (click-based) -->
+                    <div class="relative">
+                        <button type="button"
+                            class="lang-switcher-toggle flex items-center text-secondary-600 dark:text-gray-300 hover:text-primary-600 transition-colors focus:outline-none"
+                            aria-label="{% trans " Select Language" %}">
+                            <i class="fas fa-globe text-xl"></i>
+                            <span class="ml-2 rtl:ml-0 rtl:mr-2 uppercase font-bold text-xs">{{ LANGUAGE_CODE }}</span>
+                            <i class="fas fa-chevron-down text-[10px] ml-1 rtl:ml-0 rtl:mr-1"></i>
+                        </button>
+                        <div
+                            class="lang-dropdown hidden absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-36 bg-white dark:bg-secondary-800 rounded-xl shadow-xl border border-secondary-100 dark:border-secondary-700 overflow-hidden z-50">
+                            {% get_available_languages as LANGUAGES %}
+                            {% for lang_code, lang_name in LANGUAGES %}
+                            <a href="{% change_lang lang_code %}"
+                                class="block w-full text-left rtl:text-right px-4 py-3 text-sm text-secondary-700 dark:text-gray-200 hover:bg-primary-50 dark:hover:bg-secondary-700 transition-colors">
+                                {{ lang_name }}
+                                {% if lang_code == LANGUAGE_CODE %}
+                                <i class="fas fa-check text-primary-500 text-xs float-right rtl:float-left pt-1"></i>
+                                {% endif %}
+                            </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <!-- Dark Mode Toggle -->
+                    <button id="theme-toggle"
+                        class="p-2 rounded-full text-secondary-600 dark:text-gray-300 hover:bg-secondary-100 dark:hover:bg-secondary-800 transition-colors"
+                        aria-label="{% trans " Toggle Dark Mode" %}">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block text-yellow-400"></i>
+                    </button>
+                    <!-- CTA Button -->
+                    <a href="{% url 'order' %}"
+                        class="px-6 py-2.5 bg-secondary-900 hover:bg-secondary-800 dark:bg-primary-600 dark:hover:bg-primary-500 text-white rounded-full font-bold text-sm shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5">{% trans "Get Started" %}</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center space-x-3 rtl:space-x-reverse">
+                    <button id="theme-toggle-mobile" class="p-2 rounded-full text-secondary-600 dark:text-gray-300"
+                        aria-label="{% trans " Toggle Dark Mode" %}">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block text-yellow-400"></i>
+                    </button>
+                    <button id="mobile-menu-btn" class="text-secondary-900 dark:text-white focus:outline-none"
+                        aria-label="Menu">
+                        <i class="fas fa-bars text-2xl" id="menu-icon-open"></i>
+                        <i class="fas fa-times text-2xl hidden" id="menu-icon-close"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white dark:bg-secondary-900 border-t border-secondary-100 dark:border-secondary-800 absolute w-full left-0 shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="{% url 'home' %}"
+                    class="block px-3 py-3 rounded-lg text-base font-medium text-secondary-900 dark:text-white hover:bg-secondary-50 dark:hover:bg-secondary-800">{% trans "Home" %}</a>
+                <a href="{% url 'about' %}"
+                    class="block px-3 py-3 rounded-lg text-base font-medium text-secondary-900 dark:text-white hover:bg-secondary-50 dark:hover:bg-secondary-800">{% trans "About Us" %}</a>
+                <a href="{% url 'services' %}"
+                    class="block px-3 py-3 rounded-lg text-base font-medium text-secondary-900 dark:text-white hover:bg-secondary-50 dark:hover:bg-secondary-800">{% trans "Our Services" %}</a>
+                <a href="{% url 'contact' %}"
+                    class="block px-3 py-3 rounded-lg text-base font-medium text-secondary-900 dark:text-white hover:bg-secondary-50 dark:hover:bg-secondary-800">{% trans "Contact Us" %}</a>
+                <a href="{% url 'order' %}"
+                    class="block px-3 py-3 rounded-lg text-base font-bold text-primary-600 dark:text-primary-400">{% trans "Get Started" %}</a>
+                <div class="pt-4 border-t border-secondary-100 dark:border-secondary-800 flex justify-around px-3">
+                    {% get_available_languages as LANGUAGES %}
+                    {% for lang_code, lang_name in LANGUAGES %}
+                    <a href="{% change_lang lang_code %}"
+                        class="text-sm font-bold px-4 py-2 rounded-lg {% if lang_code == LANGUAGE_CODE %}bg-primary-100 dark:bg-primary-900/30 text-primary-600{% else %}text-secondary-500 hover:text-secondary-900 dark:hover:text-white{% endif %}">{{ lang_name }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Content Block -->
+    <main>
+        {% if messages %}
+        <div class="fixed top-24 right-4 rtl:right-auto rtl:left-4 z-[60] w-full max-w-sm space-y-2">
+            {% for message in messages %}
+            <div data-auto-dismiss
+                class="bg-white dark:bg-secondary-800 border-l-4 rtl:border-l-0 rtl:border-r-4 {% if message.tags == 'success' %}border-green-500{% elif message.tags == 'error' %}border-red-500{% elif message.tags == 'warning' %}border-yellow-500{% else %}border-blue-500{% endif %} shadow-lg rounded-lg p-4 flex items-start">
+                <div class="flex-grow">
+                    <p class="text-sm font-medium text-secondary-900 dark:text-white">{{ message }}</p>
+                </div>
+                <button onclick="this.parentElement.remove()"
+                    class="text-secondary-400 hover:text-secondary-600 ml-4 rtl:ml-0 rtl:mr-4 flex-shrink-0">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% block content %}{% endblock %}
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-secondary-50 dark:bg-secondary-950 pt-16 pb-8 border-t border-secondary-200 dark:border-secondary-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <span
+                        class="font-extrabold text-2xl tracking-tight text-secondary-900 dark:text-white mb-4 block">ACADEMIQ</span>
+                    <p class="text-secondary-600 dark:text-secondary-400 text-sm leading-relaxed mb-6">{% trans "Your trusted partner in academic excellence. We provide professional services for thesis preparation, research review, and more." %}</p>
+                    <div class="flex space-x-4 rtl:space-x-reverse">
+                        <a href="https://www.facebook.com/Academiq2" target="_blank"
+                            class="text-secondary-400 hover:text-primary-600 transition-colors" aria-label="Facebook"><i
+                                class="fab fa-facebook text-xl"></i></a>
+                        <a href="https://www.instagram.com/trend.vf/" target="_blank"
+                            class="text-secondary-400 hover:text-primary-600 transition-colors"
+                            aria-label="Instagram"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="https://www.tiktok.com/@academiq4?lang=ar" target="_blank"
+                            class="text-secondary-400 hover:text-primary-600 transition-colors" aria-label="TikTok"><i
+                                class="fab fa-tiktok text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-secondary-900 dark:text-white mb-6">{% trans "Quick Links" %}</h4>
+                    <ul class="space-y-3 text-sm text-secondary-600 dark:text-secondary-400">
+                        <li><a href="{% url 'home' %}" class="hover:text-primary-600 transition-colors">{% trans "Home" %}</a></li>
+                        <li><a href="{% url 'about' %}" class="hover:text-primary-600 transition-colors">{% trans "About Us" %}</a></li>
+                        <li><a href="{% url 'services' %}" class="hover:text-primary-600 transition-colors">{% trans "Our Services" %}</a></li>
+                        <li><a href="{% url 'contact' %}" class="hover:text-primary-600 transition-colors">{% trans "Contact Us" %}</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-secondary-900 dark:text-white mb-6">{% trans "Our Services" %}</h4>
+                    <ul class="space-y-3 text-sm text-secondary-600 dark:text-secondary-400">
+                        <li><a href="{% url 'order' %}?service=thesis"
+                                class="hover:text-primary-600 transition-colors">{% trans "Thesis Preparation" %}</a>
+                        </li>
+                        <li><a href="{% url 'order' %}?service=review"
+                                class="hover:text-primary-600 transition-colors">{% trans "Paper Reviewing" %}</a></li>
+                        <li><a href="{% url 'order' %}?service=statistics"
+                                class="hover:text-primary-600 transition-colors">{% trans "Statistical Analysis" %}</a>
+                        </li>
+                        <li><a href="{% url 'order' %}?service=translation"
+                                class="hover:text-primary-600 transition-colors">{% trans "Scientific Translation" %}</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-secondary-900 dark:text-white mb-6">{% trans "Contact Us" %}</h4>
+                    <ul class="space-y-4 text-sm text-secondary-600 dark:text-secondary-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 rtl:mr-0 rtl:ml-3 text-primary-500"></i>
+                            <span>{% trans "123 Academic Street" %}<br>{% trans "Research City, RC 12345" %}</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 rtl:mr-0 rtl:ml-3 text-primary-500"></i>
+                            <span>trend.vf@gmail.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 rtl:mr-0 rtl:ml-3 text-primary-500"></i>
+                            <span dir="ltr">+20 15 50542454</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-secondary-200 dark:border-secondary-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-secondary-500">
+                <p>&copy; 2026 {% trans "ACADEMIQ. All rights reserved." %}</p>
+                <div class="flex space-x-6 rtl:space-x-reverse mt-4 md:mt-0">
+                    <a href="{% url 'privacy_policy' %}"
+                        class="hover:text-secondary-900 dark:hover:text-white transition-colors">{% trans "Privacy Policy" %}</a>
+                    <a href="#" class="hover:text-secondary-900 dark:hover:text-white transition-colors">{% trans "Terms of Service" %}</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        // Dark Mode Toggle
+        const html = document.documentElement;
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        }
+
+        function toggleTheme() {
+            html.classList.toggle('dark');
+            localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+        }
+
+        document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+        const mobileThemeBtn = document.getElementById('theme-toggle-mobile');
+        if (mobileThemeBtn) mobileThemeBtn.addEventListener('click', toggleTheme);
+
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIconOpen = document.getElementById('menu-icon-open');
+        const menuIconClose = document.getElementById('menu-icon-close');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            menuIconOpen.classList.toggle('hidden', !isHidden);
+            menuIconClose.classList.toggle('hidden', isHidden);
+        });
+    </script>
+
+    <!-- Custom JS -->
+    <script src="{% static 'js/main.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+
+</html>

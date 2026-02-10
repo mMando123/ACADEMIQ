@@ -1,0 +1,7 @@
+# ACADEMIQ - Production Dependencies
+Django>=4.2,<5.0
+django-widget-tweaks>=1.5
+polib>=1.2
+
+# Production email (uncomment when ready)
+# django-sendgrid-v5

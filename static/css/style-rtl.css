@@ -1,0 +1,55 @@
+/* ACADEMIQ - RTL Optimization */
+
+/* Ensure proper font rendering for Arabic */
+:root {
+    --font-primary: 'Tajawal', sans-serif;
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Flip specific transform icons if needed */
+.fa-arrow-right {
+    transform: rotate(180deg);
+}
+
+.fa-chevron-right {
+    transform: rotate(180deg);
+}
+
+.fa-chevron-left {
+    transform: rotate(180deg);
+}
+
+/* Flip gradients if they have direction */
+.bg-gradient-to-r {
+    background-image: linear-gradient(to left, var(--tw-gradient-stops));
+}
+
+/* Adjust list positioning */
+ul,
+ol {
+    padding-right: 0;
+}
+
+/* Ensure absolute positioning respects RTL where Tailwind might not */
+.rtl-flip-x {
+    transform: scaleX(-1);
+}
+
+/* Fix for specific form elements */
+select {
+    background-position: left 0.75rem center !important;
+    padding-left: 2.5rem !important;
+    padding-right: 1rem !important;
+}
+
+/* Blockquote styling */
+blockquote {
+    border-left: none;
+    border-right: 4px solid #e5e7eb;
+    padding-left: 0;
+    padding-right: 1rem;
+}

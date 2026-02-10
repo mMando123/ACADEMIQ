@@ -1,0 +1,699 @@
+# Arabic translations for ACADEMIQ project
+msgid ""
+msgstr ""
+"Project-Id-Version: ACADEMIQ 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-10 11:45+0000\n"
+"PO-Revision-Date: 2026-02-10 11:45+0000\n"
+"Last-Translator: ACADEMIQ Team\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+msgid "123 Academic Street"
+msgstr "123 شارع الأكاديمية"
+
+msgid "A simple, transparent process designed for your success."
+msgstr "عملية بسيطة وشفافة مصممة لنجاحك."
+
+msgid "ACADEMIQ - Premium Academic Solutions"
+msgstr ""
+
+msgid "ACADEMIQ - The Premium Platform for Academic Excellence"
+msgstr ""
+
+msgid "ACADEMIQ provided exceptional support for my complex data analysis. Highly recommended!"
+msgstr "قدمت أكاديميك دعمًا استثنائيًا لتحليل بياناتي المعقد. أوصي بهم بشدة!"
+
+msgid "ACADEMIQ. All rights reserved."
+msgstr "أكاديميك. جميع الحقوق محفوظة."
+
+msgid "About ACADEMIQ - Our Mission & Vision"
+msgstr "عن أكاديميك - رسالتنا ورؤيتنا"
+
+msgid "Absolutely. We maintain strict confidentiality protocols. Your personal information and project details are never shared with third parties. All our experts sign comprehensive non-disclosure agreements."
+msgstr "بالتأكيد. نحن نحافظ على بروتوكولات سرية صارمة. لا تتم مشاركة معلوماتك الشخصية وتفاصيل المشروع مع أطراف ثالثة. يوقع جميع خبرائنا اتفاقيات عدم إفشاء شاملة."
+
+msgid "Academic Formatting"
+msgstr "التنسيق الأكاديمي"
+
+msgid "Academic Future"
+msgstr "مستقبلك الأكاديمي"
+
+msgid "Academic solutions tailored for researchers and scholars."
+msgstr "حلول أكاديمية مصممة للباحثين والعلماء."
+
+msgid "Active"
+msgstr ""
+
+msgid "Advanced data interpretation using SPSS, R, and Python."
+msgstr "تفسير متقدم للبيانات باستخدام SPSS و R و Python."
+
+msgid "Assistant Professor"
+msgstr "أستاذ مساعد"
+
+msgid "Attachment"
+msgstr ""
+
+msgid "Attachments (Optional)"
+msgstr ""
+
+msgid "Back to Home"
+msgstr "العودة للرئيسية"
+
+msgid "Before submitting to journals, ensure your research paper meets publication standards. Our peer-review process provides critical feedback to strengthen your methodology, arguments, and presentation."
+msgstr "قبل التقديم للمجلات، تأكد من أن ورقتك البحثية تلبي معايير النشر. توفر عملية مراجعة النظراء لدينا ملاحظات نقدية لتعزيز منهجيتك وحججك وعرضك."
+
+msgid "Bridging the Gap to"
+msgstr "سد الفجوة نحو"
+
+msgid "Call Us"
+msgstr "اتصل بنا"
+
+msgid "Cancelled"
+msgstr ""
+
+msgid "Chapter Drafting"
+msgstr "صياغة الفصول"
+
+msgid "Client Satisfaction"
+msgstr "رضا العملاء"
+
+msgid "Completed"
+msgstr ""
+
+msgid "Comprehensive guidance for high-impact postgraduate research."
+msgstr "توجيه شامل لأبحاث الدراسات العليا والمؤثرة."
+
+msgid "Comprehensive support for Master's and PhD theses. We help with topic selection, proposal writing, literature review, and methodology design."
+msgstr "دعم شامل لرسائل الماجستير والدكتوراه. نساعد في اختيار الموضوع، كتابة المقترح، مراجعة الدراسات السابقة، وتصميم المنهجية."
+
+msgid "Confidentiality"
+msgstr "السرية"
+
+msgid "Contact Information"
+msgstr "معلومات الاتصال"
+
+msgid "Contact Message"
+msgstr ""
+
+msgid "Contact Messages"
+msgstr ""
+
+msgid "Contact Support"
+msgstr "اتصل بالدعم"
+
+msgid "Contact Us"
+msgstr "اتصل بنا"
+
+msgid "Contact Us - ACADEMIQ"
+msgstr "اتصل بنا - أكاديميك"
+
+msgid "Countries Served"
+msgstr "بلدًا نخدمه"
+
+msgid "Critical Appraisal"
+msgstr "التقييم النقدي"
+
+msgid "Customer Name"
+msgstr ""
+
+msgid "Data Security"
+msgstr "أمن البيانات"
+
+msgid "Data Visualization"
+msgstr "تصوير البيانات"
+
+msgid "Describe your project requirements, deadline, and any specific details..."
+msgstr ""
+
+msgid "Display Order"
+msgstr ""
+
+msgid "Do you offer revisions?"
+msgstr "هل تقدمون مراجعات؟"
+
+msgid "Drag and drop your files here, or click to upload"
+msgstr ""
+
+msgid "Driving Academic Excellence"
+msgstr "قيادة التميز الأكاديمي"
+
+msgid "Editor-in-Chief"
+msgstr "رئيس التحرير"
+
+msgid "Email Address"
+msgstr "البريد الإلكتروني"
+
+msgid "Email Us"
+msgstr "راسلنا"
+
+msgid "Enter a valid phone number."
+msgstr ""
+
+msgid "Excellence"
+msgstr "التميز"
+
+msgid "Experienced academics and industry professionals dedicated to your success."
+msgstr "أكاديميون ومهنيون ذوو خبرة مكرسون لنجاحك."
+
+msgid "Expert Assignment"
+msgstr "تعيين خبير"
+
+msgid "Expert solutions tailored to your research needs. From concept to publication."
+msgstr "حلول خبراء مصممة خصيصًا لاحتياجات بحثك. من الفكرة إلى النشر."
+
+msgid "File size exceeds the 50 MB limit."
+msgstr ""
+
+msgid "Fill out our secure order form with your project details and requirements."
+msgstr "املأ نموذج الطلب الآمن الخاص بنا بتفاصيل وشروط مشروعك."
+
+msgid "Fill out the form below and we'll get back to you within 24 hours."
+msgstr "املأ النموذج أدناه وسنعاود الاتصال بك في غضون 24 ساعة."
+
+msgid "Find quick answers to common questions about our services."
+msgstr "ابحث عن إجابات سريعة للأسئلة الشائعة حول خدماتنا."
+
+msgid "Font Awesome icon class"
+msgstr ""
+
+msgid "Formatting & Editing"
+msgstr "التنسيق والتحرير"
+
+msgid "Founded in 2009, ACADEMIQ began with a simple mission: to bridge the gap between ambitious scholars and academic excellence. What started as a small team of dedicated academics has grown into a global network of over 500+ subject matter experts."
+msgstr "تأسست أكاديميك في عام 2009 بمهمة بسيطة: سد الفجوة بين العلماء الطموحين والتميز الأكاديمي. ما بدأ كفريق صغير من الأكاديميين المتخصصين نما ليصبح شبكة عالمية تضم أكثر من 500 خبير في مختلف المجالات."
+
+msgid "Founder & CEO"
+msgstr "المؤسس والمدير التنفيذي"
+
+msgid "Frequently Asked Questions"
+msgstr "الأسئلة الشائعة"
+
+msgid "Full Description"
+msgstr ""
+
+msgid "Full Name"
+msgstr "الاسم الكامل"
+
+msgid "Full support for Master's and PhD research."
+msgstr ""
+
+msgid "General Inquiry"
+msgstr ""
+
+msgid "Get Quote"
+msgstr "احصل على عرض سعر"
+
+msgid "Get Started"
+msgstr "ابدأ الآن"
+
+msgid "Get in Touch"
+msgstr "تواصل معنا"
+
+msgid "Get your high-quality, plagiarism-checked work on time."
+msgstr "احصل على عملك عالي الجودة والمدقق من الانتحال في الوقت المحدد."
+
+msgid "Global Community"
+msgstr "مجتمع عالمي"
+
+msgid "Have questions? We're here to help you achieve your academic goals."
+msgstr "لديك أسئلة؟ نحن هنا لمساعدتك في تحقيق أهدافك الأكاديمية."
+
+msgid "Head of Research"
+msgstr "رئيس الأبحاث"
+
+msgid "Hour Support"
+msgstr "ساعة دعم"
+
+msgid "How We Work"
+msgstr "كيف نعمل"
+
+msgid "How quickly can you complete my project?"
+msgstr "ما هي السرعة التي يمكنك بها إكمال مشروعي؟"
+
+msgid "Hypothesis Testing"
+msgstr "اختبار الفرضيات"
+
+msgid "I agree to the"
+msgstr ""
+
+msgid "Icon Class"
+msgstr ""
+
+msgid "In Progress"
+msgstr ""
+
+msgid "Information We Collect"
+msgstr "المعلومات التي نجمعها"
+
+msgid "Innovation"
+msgstr "الابتكار"
+
+msgid "Institution"
+msgstr ""
+
+msgid "Integrity"
+msgstr "النزاهة"
+
+msgid "Invalid file type. Allowed: PDF, DOC, DOCX, TXT, ZIP, RAR."
+msgstr ""
+
+msgid "Is my information kept confidential?"
+msgstr "هل يتم الحفاظ على سرية معلوماتي؟"
+
+msgid "John Doe"
+msgstr ""
+
+msgid "Join thousands of successful scholars today."
+msgstr "انضم إلى آلاف الباحثين الناجحين اليوم."
+
+msgid "Language Polishing"
+msgstr "صقل اللغة"
+
+msgid "Lead Statistician"
+msgstr "كبير الإحصائيين"
+
+msgid "Learn More"
+msgstr "المزيد"
+
+msgid "Let's Build Something Great"
+msgstr ""
+
+msgid "Master Your"
+msgstr "أتقن"
+
+msgid "Master's & PhD Thesis Preparation"
+msgstr "إعداد رسائل الماجستير والدكتوراه"
+
+msgid "Meet Our Leadership"
+msgstr "تعرف على قيادتنا"
+
+msgid "Message"
+msgstr "الرسالة"
+
+msgid "Message Sent!"
+msgstr "تم إرسال الرسالة!"
+
+msgid "Mon-Fri 9am-6pm"
+msgstr "الاثنين - الجمعة 9 صباحًا - 6 مساءً"
+
+msgid "New: Advanced Statistical Analysis Available"
+msgstr "جديد: يتوفر الآن التحليل الإحصائي المتقدم"
+
+msgid "Order Request"
+msgstr ""
+
+msgid "Order Requests"
+msgstr ""
+
+msgid "Order Status"
+msgstr ""
+
+msgid "Order Submitted!"
+msgstr "تم تقديم الطلب!"
+
+msgid "Our Core Values"
+msgstr "قيمنا الأساسية"
+
+msgid "Our Services"
+msgstr "خدماتنا"
+
+msgid "Our Services - ACADEMIQ"
+msgstr "خدماتنا - أكاديميك"
+
+msgid "Our Specialized Services"
+msgstr "خدماتنا المتخصصة"
+
+msgid "Our journey has been marked by the success of thousands of students and researchers who have achieved their academic goals with our support. From Master's students to PhD candidates, from early-career researchers to established academics, we have been privileged to contribute to scholarly success across disciplines."
+msgstr "تميزت رحلتنا بنجاح آلاف الطلاب والباحثين الذين حققوا أهدافهم الأكاديمية بدعمنا. من طلاب الماجستير إلى مرشحي الدكتوراه، ومن الباحثين في بداية حياتهم المهنية إلى الأكاديميين المرموقين، تشرفنا بالمساهمة في النجاح العلمي عبر مختلف التخصصات."
+
+msgid "Page Not Found"
+msgstr "الصفحة غير موجودة"
+
+msgid "Page Not Found - ACADEMIQ"
+msgstr "الصفحة غير موجودة - أكاديميك"
+
+msgid "Paper Reviewing"
+msgstr "مراجعة الأبحاث"
+
+msgid "Pending"
+msgstr ""
+
+msgid "Perfect compliance with APA, MLA, Chicago, and Harvard."
+msgstr "التزام كامل بمعايير APA و MLA و Chicago و Harvard."
+
+msgid "Personal Information"
+msgstr ""
+
+msgid "PhD Candidate"
+msgstr "مرشح للدكتوراه"
+
+msgid "PhD Experts"
+msgstr "خبراء دكتوراه"
+
+msgid "PhD in Education with 20+ years in academic consulting."
+msgstr "دكتوراه في التعليم مع خبرة تزيد عن 20 عامًا في الاستشارات الأكاديمية."
+
+msgid "PhD in Literature, 15 years of academic editing experience."
+msgstr "دكتوراه في الأدب، 15 عامًا من الخبرة في التحرير الأكاديمي."
+
+msgid "PhD in Psychology, expert in qualitative research methods."
+msgstr "دكتوراه في علم النفس، خبير في أساليب البحث النوعي."
+
+msgid "PhD in Statistics, specializes in SPSS, R, and Python analysis."
+msgstr "دكتوراه في الإحصاء، متخصص في تحليل SPSS و R و Python."
+
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+msgid "Photo"
+msgstr ""
+
+msgid "Please include: topic, word count, deadline, specific requirements, and any other relevant details."
+msgstr ""
+
+msgid "Precise academic translation preserving technical nuances."
+msgstr "ترجمة أكاديمية دقيقة تحافظ على المصطلحات التقنية."
+
+msgid "Premium Academic Services"
+msgstr "خدمات أكاديمية متميزة"
+
+msgid "Privacy Policy"
+msgstr "سياسة الخصوصية"
+
+msgid "Privacy Policy - ACADEMIQ"
+msgstr "سياسة الخصوصية - أكاديميك"
+
+msgid "Processing Data..."
+msgstr "جاري معالجة البيانات..."
+
+msgid "Professional academic services for university students, researchers, and postgraduate scholars."
+msgstr ""
+
+msgid "Professional, confidential, and incredibly precise translation work."
+msgstr "عمل احترافي وسري ودقيق للغاية في الترجمة."
+
+msgid "Project Details"
+msgstr ""
+
+msgid "Project Details / Message"
+msgstr ""
+
+msgid "Project timelines vary based on complexity and scope. A typical thesis chapter takes 1-2 weeks, while a full thesis may take 4-8 weeks. We always work to meet your deadlines and will provide a specific timeline in our quote."
+msgstr "تختلف الجداول الزمنية للمشروع بناءً على التعقيد والنطاق. يستغرق فصل الرسالة النموذجي من أسبوع إلى أسبوعين، بينما قد تستغرق الرسالة الكاملة من 4 إلى 8 أسابيع. نحن نعمل دائمًا على تلبية المواعيد النهائية الخاصة بك وسنقدم جدولاً زمنيًا محددًا في عرض السعر الخاص بنا."
+
+msgid "Projects Completed"
+msgstr "مشروع مكتمل"
+
+msgid "Quick Links"
+msgstr "روابط سريعة"
+
+msgid "Rating (1-5)"
+msgstr ""
+
+msgid "Read"
+msgstr ""
+
+msgid "Ready to Elevate Your Research?"
+msgstr "هل أنت مستعد للارتقاء ببحثك؟"
+
+msgid "Ready to get started?"
+msgstr "هل أنت مستعد للبدء؟"
+
+msgid "Receive Work"
+msgstr "استلام العمل"
+
+msgid "Receive a personalized quote and timeline evaluation within 24 hours."
+msgstr "احصل على عرض سعر مخصص وتقييم للجدول الزمني خلال 24 ساعة."
+
+msgid "Research Analysis"
+msgstr "تحليل البحث"
+
+msgid "Research City, RC 12345"
+msgstr "مدينة الأبحاث، RC 12345"
+
+msgid "Research Paper Review"
+msgstr ""
+
+msgid "Research Paper Reviewing"
+msgstr "مراجعة الأبحاث"
+
+msgid "Researchers from top universities trust us."
+msgstr "باحثون من أفضل الجامعات يثقون بنا."
+
+msgid "Results interpretation and reporting"
+msgstr "تفسير النتائج وإعداد التقارير"
+
+msgid "Scholarly Success"
+msgstr "النجاح العلمي"
+
+msgid "Scientific Translation"
+msgstr "الترجمة العلمية"
+
+msgid "Select Language"
+msgstr "اختر اللغة"
+
+msgid "Select a service..."
+msgstr ""
+
+msgid "Selected file:"
+msgstr ""
+
+msgid "Send Message"
+msgstr "إرسال الرسالة"
+
+msgid "Send us a Message"
+msgstr "أرسل لنا رسالة"
+
+msgid "Senior Researcher"
+msgstr "باحث أول"
+
+msgid "Server Error - ACADEMIQ"
+msgstr "خطأ في الخادم - أكاديميك"
+
+msgid "Service"
+msgstr ""
+
+msgid "Service Title"
+msgstr ""
+
+msgid "Service Type"
+msgstr "نوع الخدمة"
+
+msgid "Services"
+msgstr "خدماتنا"
+
+msgid "Short Description"
+msgstr ""
+
+msgid "Something Went Wrong"
+msgstr "حدث خطأ ما"
+
+msgid "Start Your Project"
+msgstr "ابدأ مشروعك"
+
+msgid "Start Your Project - ACADEMIQ"
+msgstr ""
+
+msgid "Start Your Project Now"
+msgstr "ابدأ مشروعك الآن"
+
+msgid "Starting Price"
+msgstr ""
+
+msgid "Statistical Analysis"
+msgstr "التحليل الإحصائي"
+
+msgid "Structure Improvement"
+msgstr "تحسين الهيكل"
+
+msgid "Subject"
+msgstr "الموضوع"
+
+msgid "Submit Order Request"
+msgstr ""
+
+msgid "Submit Request"
+msgstr "إرسال الطلب"
+
+msgid "Submitted At"
+msgstr ""
+
+msgid "Success - ACADEMIQ"
+msgstr "نجاح - أكاديميك"
+
+msgid "Supported formats: PDF, DOC, DOCX, TXT, ZIP, RAR (Max 50MB)"
+msgstr ""
+
+msgid "Tell us about your project and receive a personalized quote within 24 hours."
+msgstr ""
+
+msgid "Tell us more about your inquiry..."
+msgstr ""
+
+msgid "Terms of Service"
+msgstr "شروط الخدمة"
+
+msgid "Testimonial"
+msgstr ""
+
+msgid "Testimonial Content"
+msgstr ""
+
+msgid "Testimonials"
+msgstr ""
+
+msgid "Thank you! Your message has been sent successfully. We will get back to you soon."
+msgstr ""
+
+msgid "Thank you! Your order has been submitted successfully. We will contact you shortly."
+msgstr ""
+
+msgid "The thesis preparation service was life-changing. I passed my viva with minor corrections."
+msgstr "كانت خدمة إعداد الرسائل العلمية نقطة تحول في حياتي. لقد نجحت في المناقشة بتعديلات بسيطة."
+
+msgid "The world's most trusted platform for thesis preparation, research review, and scholarly support. Join 5,000+ researchers globally."
+msgstr "المنصة الأكثر موثوقية في العالم لإعداد الرسائل العلمية ومراجعة الأبحاث والدعم العلمي. انضم إلى أكثر من 5000 باحث عالميًا."
+
+msgid "These principles guide every aspect of our work and define who we are as an organization."
+msgstr "هذه المبادئ توجه كل جانب من جوانب عملنا وتحدد من نحن كمؤسسة."
+
+msgid "Thesis Preparation"
+msgstr "إعداد الرسائل العلمية"
+
+msgid "Title / Position"
+msgstr ""
+
+msgid "Toggle Dark Mode"
+msgstr "تبديل الوضع الداكن"
+
+msgid "Topic Development"
+msgstr "تطوير الموضوع"
+
+msgid "Transform your raw data into meaningful insights with our advanced statistical analysis services. Our statisticians are proficient in SPSS, R, Python, SAS, and Stata, ensuring accurate and reliable results."
+msgstr "حول بياناتك الأولية إلى رؤى ذات مغزى من خلال خدمات التحليل الإحصائي المتقدمة لدينا. خبراؤنا بارعون في SPSS و R و Python و SAS و Stata، مما يضمن نتائج دقيقة وموثوقة."
+
+msgid "URL Slug"
+msgstr ""
+
+msgid "Updated At"
+msgstr ""
+
+msgid "View Services"
+msgstr "عرض الخدمات"
+
+msgid "Visit Us"
+msgstr "زيارتنا"
+
+msgid "Voices of Excellence"
+msgstr "أصوات التميز"
+
+msgid "We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers. Payment is typically split: 50% upfront and 50% upon completion."
+msgstr "نحن نقبل جميع بطاقات الائتمان الرئيسية (Visa، MasterCard، American Express)، وPayPal، والتحويلات البنكية. عادة ما يتم تقسيم الدفع: 50% مقدمًا و50% عند الانتهاء."
+
+msgid "We are a global network of scholars dedicated to empowering the next generation of researchers."
+msgstr "نحن شبكة عالمية من العلماء مكرسة لتمكين الجيل القادم من الباحثين."
+
+msgid "We continuously evolve our methods and tools to provide cutting-edge academic support services."
+msgstr "نحن نطور باستمرار أساليبنا وأدواتنا لتقديم خدمات دعم أكاديمي متطورة."
+
+msgid "We match you with a subject matter expert who begins working immediately."
+msgstr "نطابقك مع خبير في الموضوع يبدأ العمل فورًا."
+
+msgid "We pursue the highest standards in everything we do, ensuring every project meets rigorous academic criteria."
+msgstr "نسعى لتحقيق أعلى المعايير في كل ما نقوم به، مما يضمن أن كل مشروع يلبي معايير أكاديمية صارمة."
+
+msgid "We uphold the highest ethical standards, maintaining academic honesty and protecting client confidentiality."
+msgstr "نحن نتمسك بأعلى المعايير الأخلاقية، ونحافظ على الأمانة الأكاديمية ونحمي سرية العملاء."
+
+msgid "What is this about?"
+msgstr ""
+
+msgid "What our scholars say about us."
+msgstr "ماذا يقول باحثونا عنا."
+
+msgid "What payment methods do you accept?"
+msgstr "ما هي طرق الدفع التي تقبلونها؟"
+
+msgid "Who We Are"
+msgstr "من نحن"
+
+msgid "Years of Excellence"
+msgstr "سنوات من التميز"
+
+msgid "Yes, we offer unlimited revisions within 30 days of project delivery. Your satisfaction is our priority, and we work with you until the final product meets your expectations."
+msgstr "نعم، نحن نقدم مراجعات غير محدودة في غضون 30 يومًا من تسليم المشروع. رضاك هو أولويتنا، ونحن نعمل معك حتى يلبي المنتج النهائي توقعاتك."
+
+msgid "Your full name"
+msgstr ""
+
+msgid "Your information is secure and encrypted."
+msgstr "معلوماتك آمنة ومشفرة."
+
+msgid "Your information is secure and encrypted. We respect your privacy."
+msgstr ""
+
+msgid "Your trusted partner in academic excellence. We provide professional services for thesis preparation, research review, and more."
+msgstr "شريكك الموثوق في التميز الأكاديمي. نحن نقدم خدمات مهنية لإعداد الرسائل العلمية ومراجعة الأبحاث والمزيد."
+
+msgid "and"
+msgstr ""
+
+msgid "your.email@example.com"
+msgstr ""
+
+
+msgid "Home"
+msgstr "الرئيسية"
+
+
+msgid "About Us"
+msgstr "من نحن"
+
+
+msgid "We collect information you provide directly to us, such as your name, email address, phone number, and project details when you submit a contact form or order request."
+msgstr "نحن نجمع المعلومات التي تقدمها لنا مباشرة، مثل اسمك وعنوان بريدك الإلكتروني ورقم هاتفك وتفاصيل المشروع عند إرسال نموذج اتصال أو طلب طلب."
+
+
+msgid "How We Use Your Information"
+msgstr "كيف نستخدم معلوماتك"
+
+
+msgid "We use the information we collect to provide, maintain, and improve our services, to process your orders, and to communicate with you about your projects."
+msgstr "نحن نستخدم المعلومات التي نجمعها لتوفير خدماتنا وصيانتها وتحسينها، ولمعالجة طلباتك، والتواصل معك بشأن مشاريعك."
+
+
+msgid "We take reasonable measures to help protect your personal information from loss, theft, misuse, and unauthorized access. All data transmission is encrypted using industry-standard SSL/TLS protocols."
+msgstr "نحن نتخذ تدابير معقولة للمساعدة في حماية معلوماتك الشخصية من الفقدان والسرقة وسوء الاستخدام والوصول غير المصرح به. يتم تشفير جميع عمليات نقل البيانات باستخدام بروتوكولات SSL/TLS القياسية الصناعية."
+
+
+msgid "Your academic work and personal data are treated with the utmost confidentiality. We do not share, sell, or distribute your information to third parties without your explicit consent."
+msgstr "تتم معاملة عملك الأكاديمي وبياناتك الشخصية بمنتهى السرية. نحن لا نشارك معلوماتك أو نبيعها أو نوزعها على أطراف ثالثة دون موافقتك الصريحة."
+
+
+msgid "If you have any questions about this Privacy Policy, please contact us at info@academiq.com."
+msgstr "إذا كان لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى الاتصال بنا على info@academiq.com."
+
+
+msgid "We accept all major credit cards (Visa, MasterCard, American Express)، PayPal، والتحويلات البنكية. عادة ما يتم تقسيم الدفع: 50% مقدمًا و50% عند الانتهاء."
+msgstr "نحن نقبل جميع بطاقات الائتمان الرئيسية (Visa، MasterCard، American Express)، وPayPal، والتحويلات البنكية. عادة ما يتم تقسيم الدفع: 50% مقدمًا و50% عند الانتهاء."
+
+
+msgid "Thank you for your order. We have received your project request and will contact you within 24 hours with a personalized quote."
+msgstr "شكرًا لك على طلبك. لقد تلقينا طلب مشروعك وسنتواصل معك في غضون 24 ساعة مع عرض سعر مخصص."
+
+
+msgid "Thank you for contacting us. We have received your message and will get back to you as soon as possible."
+msgstr "شكرًا لتواصلك معنا. لقد تلقينا رسالتك وسنرد عليك في أقرب وقت ممكن."
+
+
+msgid "The page you are looking for might have been removed or is temporarily unavailable."
+msgstr "قد تكون الصفحة التي تبحث عنها قد تمت إزالتها أو أنها غير متاحة مؤقتًا."
+
+
+msgid "We're experiencing some technical difficulties. Please try again later."
+msgstr "نحن نواجه بعض الصعوبات الفنية. يرجى المحاولة مرة أخرى في وقت لاحق."

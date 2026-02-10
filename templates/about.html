@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "About ACADEMIQ - Our Mission & Vision" %}{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<header class="relative bg-secondary-900 py-24 overflow-hidden">
+    <div class="absolute inset-0">
+        <div class="absolute top-0 left-0 w-full h-full bg-secondary-900 opacity-90"></div>
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-primary-600/20 rounded-full blur-3xl"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center pt-10">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6" data-aos="fade-up">{% trans "Driving Academic Excellence" %}</h1>
+        <p class="text-xl text-secondary-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">{% trans "We are a global network of scholars dedicated to empowering the next generation of researchers." %}</p>
+    </div>
+</header>
+
+<!-- Our Story Section -->
+<section class="py-24 bg-white dark:bg-secondary-900 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+            <!-- Text Content -->
+            <div class="w-full lg:w-1/2" data-aos="fade-right">
+                <span class="text-primary-600 font-bold uppercase tracking-wider mb-2 block">{% trans "Who We Are" %}</span>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-secondary-900 dark:text-white mb-6">
+                    {% trans "Bridging the Gap to" %} <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-indigo-600">{% trans "Scholarly Success" %}</span>
+                </h2>
+                <div class="space-y-6 text-lg text-secondary-600 dark:text-secondary-400 leading-relaxed">
+                    <p>{% trans "Founded in 2009, ACADEMIQ began with a simple mission: to bridge the gap between ambitious scholars and academic excellence. What started as a small team of dedicated academics has grown into a global network of over 500+ subject matter experts." %}</p>
+                    <p>{% trans "Our journey has been marked by the success of thousands of students and researchers who have achieved their academic goals with our support. From Master's students to PhD candidates, from early-career researchers to established academics, we have been privileged to contribute to scholarly success across disciplines." %}</p>
+                </div>
+                <div class="mt-10 grid grid-cols-2 gap-8">
+                    <div>
+                        <div class="text-3xl font-bold text-primary-600 mb-1">15+</div>
+                        <div class="text-sm text-secondary-500 dark:text-secondary-400 font-medium">{% trans "Years of Excellence" %}</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-primary-600 mb-1">50+</div>
+                        <div class="text-sm text-secondary-500 dark:text-secondary-400 font-medium">{% trans "Countries Served" %}</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Content -->
+            <div class="w-full lg:w-1/2 relative" data-aos="fade-left">
+                <div
+                    class="relative rounded-3xl overflow-hidden shadow-2xl border border-secondary-100 dark:border-secondary-700 aspect-[4/3] bg-secondary-100 dark:bg-secondary-800">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="relative w-64 h-64">
+                            <div
+                                class="absolute top-0 left-0 w-32 h-32 bg-primary-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob">
+                            </div>
+                            <div
+                                class="absolute top-0 right-0 w-32 h-32 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000">
+                            </div>
+                            <div
+                                class="absolute -bottom-8 left-20 w-32 h-32 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div
+                            class="glass-panel p-8 rounded-2xl max-w-xs text-center transform hover:scale-105 transition-transform duration-500">
+                            <i class="fas fa-users text-4xl text-primary-600 mb-4"></i>
+                            <h3 class="text-xl font-bold text-secondary-900 dark:text-white mb-2">{% trans "Global Community" %}</h3>
+                            <p class="text-sm text-secondary-600 dark:text-secondary-400">{% trans "Researchers from top universities trust us." %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Values Section -->
+<section class="py-24 bg-secondary-50 dark:bg-secondary-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-secondary-900 dark:text-white mb-4">{% trans "Our Core Values" %}</h2>
+            <p class="text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto">{% trans "These principles guide every aspect of our work and define who we are as an organization." %}</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white dark:bg-secondary-900 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300 border border-secondary-100 dark:border-secondary-700"
+                data-aos="fade-up" data-aos-delay="0">
+                <div
+                    class="w-14 h-14 bg-primary-100 dark:bg-primary-900/30 rounded-xl flex items-center justify-center text-primary-600 dark:text-primary-400 text-2xl mb-6">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary-900 dark:text-white mb-3">{% trans "Excellence" %}</h3>
+                <p class="text-secondary-600 dark:text-secondary-400">{% trans "We pursue the highest standards in everything we do, ensuring every project meets rigorous academic criteria." %}</p>
+            </div>
+            <div class="bg-white dark:bg-secondary-900 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300 border border-secondary-100 dark:border-secondary-700"
+                data-aos="fade-up" data-aos-delay="100">
+                <div
+                    class="w-14 h-14 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center text-green-600 dark:text-green-400 text-2xl mb-6">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary-900 dark:text-white mb-3">{% trans "Integrity" %}</h3>
+                <p class="text-secondary-600 dark:text-secondary-400">{% trans "We uphold the highest ethical standards, maintaining academic honesty and protecting client confidentiality." %}</p>
+            </div>
+            <div class="bg-white dark:bg-secondary-900 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300 border border-secondary-100 dark:border-secondary-700"
+                data-aos="fade-up" data-aos-delay="200">
+                <div
+                    class="w-14 h-14 bg-indigo-100 dark:bg-indigo-900/30 rounded-xl flex items-center justify-center text-indigo-600 dark:text-indigo-400 text-2xl mb-6">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary-900 dark:text-white mb-3">{% trans "Innovation" %}</h3>
+                <p class="text-secondary-600 dark:text-secondary-400">{% trans "We continuously evolve our methods and tools to provide cutting-edge academic support services." %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="py-24 bg-white dark:bg-secondary-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-secondary-900 dark:text-white mb-4">{% trans "Meet Our Leadership" %}</h2>
+            <p class="text-secondary-600 dark:text-secondary-400">{% trans "Experienced academics and industry professionals dedicated to your success." %}</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="group text-center" data-aos="fade-up" data-aos-delay="0">
+                <div
+                    class="w-48 h-48 mx-auto bg-secondary-100 dark:bg-secondary-800 rounded-full mb-6 flex items-center justify-center border-4 border-white dark:border-secondary-900 shadow-xl group-hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-user-graduate text-6xl text-primary-600"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary-900 dark:text-white">{% trans "Dr. Sarah Ahmed" %}</h3>
+                <p class="text-primary-600 font-medium text-sm mb-2">{% trans "Founder & CEO" %}</p>
+                <p class="text-secondary-500 dark:text-secondary-400 text-sm">{% trans "PhD in Education with 20+ years in academic consulting." %}</p>
+            </div>
+            <div class="group text-center" data-aos="fade-up" data-aos-delay="100">
+                <div
+                    class="w-48 h-48 mx-auto bg-secondary-100 dark:bg-secondary-800 rounded-full mb-6 flex items-center justify-center border-4 border-white dark:border-secondary-900 shadow-xl group-hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-user-tie text-6xl text-primary-600"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary-900 dark:text-white">{% trans "Prof. Mahmoud Hassan" %}</h3>
+                <p class="text-primary-600 font-medium text-sm mb-2">{% trans "Head of Research" %}</p>
+                <p class="text-secondary-500 dark:text-secondary-400 text-sm">{% trans "PhD in Psychology, expert in qualitative research methods." %}</p>
+            </div>
+            <div class="group text-center" data-aos="fade-up" data-aos-delay="200">
+                <div
+                    class="w-48 h-48 mx-auto bg-secondary-100 dark:bg-secondary-800 rounded-full mb-6 flex items-center justify-center border-4 border-white dark:border-secondary-900 shadow-xl group-hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-chart-bar text-6xl text-primary-600"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary-900 dark:text-white">{% trans "Dr. Amira Ali" %}</h3>
+                <p class="text-primary-600 font-medium text-sm mb-2">{% trans "Lead Statistician" %}</p>
+                <p class="text-secondary-500 dark:text-secondary-400 text-sm">{% trans "PhD in Statistics, specializes in SPSS, R, and Python analysis." %}</p>
+            </div>
+            <div class="group text-center" data-aos="fade-up" data-aos-delay="300">
+                <div
+                    class="w-48 h-48 mx-auto bg-secondary-100 dark:bg-secondary-800 rounded-full mb-6 flex items-center justify-center border-4 border-white dark:border-secondary-900 shadow-xl group-hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-pen-nib text-6xl text-primary-600"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary-900 dark:text-white">{% trans "Mr. Youssef Ibrahim" %}</h3>
+                <p class="text-primary-600 font-medium text-sm mb-2">{% trans "Editor-in-Chief" %}</p>
+                <p class="text-secondary-500 dark:text-secondary-400 text-sm">{% trans "PhD in Literature, 15 years of academic editing experience." %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,3 +1,4 @@
+
 """
 Django settings for academiq project.
 Production-ready configuration for PythonAnywhere deployment.
@@ -20,7 +21,14 @@ SECRET_KEY = os.environ.get(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1,192.168.100.5').split(',')
+# Correctly handle ALLOWED_HOSTS for PythonAnywhere
+# It checks if we are on PythonAnywhere (via hostname env var or manually set)
+env_hosts = os.environ.get('DJANGO_ALLOWED_HOSTS')
+if env_hosts:
+    ALLOWED_HOSTS = env_hosts.split(',')
+else:
+    # Fallback to local development hosts + specific PA host just in case
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.100.5', '.pythonanywhere.com']
 
 # Application definition
 INSTALLED_APPS = [
@@ -71,6 +79,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'academiq.wsgi.application'
 
 # Database
+# Use SQLite for simplicity on PythonAnywhere (default config)
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -124,14 +133,17 @@ DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL', 'noreply@academiq.com'
 # Admin email for notifications
 ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL', 'admin@academiq.com')
 
-# Security Headers
 # Security Settings
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 X_FRAME_OPTIONS = 'DENY'
 SESSION_COOKIE_HTTPONLY = True
+
+# CSRF Settings
 CSRF_COOKIE_HTTPONLY = False
-CSRF_USE_SESSIONS = True  # Use session to store CSRF token
+CSRF_USE_SESSIONS = True  
+
+# Base CSRF trusted origins for development
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost',
     'http://127.0.0.1',
@@ -141,8 +153,11 @@ CSRF_TRUSTED_ORIGINS = [
     'http://192.168.100.5:8000',
 ]
 
+# Dynamically add PythonAnywhere host to CSRF origins
 if os.environ.get('DJANGO_CSRF_TRUSTED_ORIGINS'):
     CSRF_TRUSTED_ORIGINS.extend(os.environ.get('DJANGO_CSRF_TRUSTED_ORIGINS').split(','))
+# Fallback: allows any subdomain on pythonanywhere if strictly needed (use with caution)
+# Better to set specific domain in env var.
 
 # Session settings
 SESSION_COOKIE_AGE = 3600
